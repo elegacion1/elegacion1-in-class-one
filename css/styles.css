@@ -1,0 +1,90 @@
+html{
+    font-size: 100%;
+}
+
+body {
+    background-color: #e6e6e9;
+    font-size: 62.5%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+/*Typographical Styles*/
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+header,
+footer{
+    background-color: #fff;
+    color: #c14745;
+    box-shadow: 2px 2px 3px #cbcbd1;
+    margin-bottom: 1.5rem;
+}
+
+.inner-container,
+footer{
+    padding: 2.2rem;
+}
+
+
+
+.card{
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+footer p{
+    font-size: 1.6rem;
+}
+@media only screen and (min-width: 600px){
+   .card-deck{
+        display: block;
+        justify-content: space-between;
+    }
+    .card:first-child{
+        width: 98%;
+    }
+    .card{
+        width: 100%;
+    }
+    .lower-deck{
+        display: flex;
+
+    }
+    
+}
+
+@media only screen and (min-width: 1000px){
+    .card-deck{
+        display: flex;
+    }
+    .card:first-child{
+        width: 31%;
+    }
+    .lower-deck{
+        width: 100%;
+        justify-content: space-around;
+        margin-left: 6rem;
+    }
+    .card:nth-child(2){
+        width: 31%;
+
+    }
+    
+}
